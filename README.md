@@ -48,38 +48,36 @@ ClaudeTailor/
 
 ## 🚀 Getting Started
 
-### 方法A: プラグインとしてインストール（推奨）
+ClaudeTailorを使用するには、リポジトリをクローンしてプラグインとして登録する必要があります。
 
-ClaudeTailorをプラグインとしてインストールすると、どのプロジェクトからでも `/tailor` コマンドを使用できます。
+### ステップ1: リポジトリのClone
 
-```bash
-# GitHubから直接インストール
-claude plugin install https://github.com/John-bardera/ClaudeTailor
-
-# または、マーケットプレイスとして追加
-claude plugin marketplace add https://github.com/John-bardera/ClaudeTailor
-```
-
-### 方法B: 手動セットアップ
-
-#### 1. リポジトリのClone（素材庫の準備）
-まずは本リポジトリを、ご自身がアクセスしやすい作業ディレクトリにクローンします。エンジニアが日常的にルールやスキルを追加・編集できるよう、隠しフォルダにはせず、手元に置いておくことをお勧めします。
+まず、リポジトリを作業ディレクトリにクローンします。
 
 ```bash
 git clone https://github.com/John-bardera/ClaudeTailor.git ~/ClaudeTailor
 ```
 
-#### 2. プラグインの登録
+### ステップ2: プラグインの登録
+
 クローンしたディレクトリを、Claude Codeにプラグインとして追加します。
 
 ```bash
 claude add plugin ~/ClaudeTailor
 ```
 
-#### 3. 素材プールの構築（あなたの色に染める）
-`~/ClaudeTailor/pool/` や `~/ClaudeTailor/submodules/` 配下に、普段お使いのRule、MCP、外部スキルを自由に配置してください。
+### ステップ3: 素材プールの構築（あなたの色に染める）
 
-#### 4. プロジェクトの仕立て（環境構築）
+`~/ClaudeTailor/pool/` 配下に、普段お使いのRule、MCP、外部スキルを自由に配置してください。
+
+```text
+~/ClaudeTailor/pool/
+├── rules/     # ルール用Markdownファイル
+├── mcps/      # MCPサーバー設定ファイル
+└── skills/    # カスタムスキルファイル
+```
+
+### ステップ4: プロジェクトの仕立て（環境構築）
 新規プロジェクトのディレクトリを作成し、Claude Codeを起動します。
 
 ```bash
