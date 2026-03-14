@@ -1,0 +1,26 @@
+{
+  "name": "claudetailor",
+  "version": "0.1.0",
+  "description": "AI-driven context provisioning engine for Claude Code — Stop context bloat. Let AI pick what it needs.",
+  "author": {
+    "name": "John-bardera",
+    "url": "https://github.com/John-bardera"
+  },
+  "homepage": "https://github.com/John-bardera/ClaudeTailor",
+  "repository": "https://github.com/John-bardera/ClaudeTailor",
+  "license": "MIT",
+  "skills": ["./skills/"],
+  "commands": ["./commands/"],
+  "keywords": [
+    "context",
+    "provisioning",
+    "context-management",
+    "workspace-setup",
+    "ai-driven",
+    "claude-code",
+    "plugin",
+    "automation",
+    "rules",
+    "mcp"
+  ]
+}

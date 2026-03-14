@@ -1,0 +1,43 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claudetailor",
+  "description": "AI-driven context provisioning engine for Claude Code — Stop context bloat. Let AI pick what it needs.",
+  "owner": {
+    "name": "John-bardera",
+    "url": "https://github.com/John-bardera"
+  },
+  "metadata": {
+    "description": "Just-In-Time Context provisioning for Claude Code"
+  },
+  "plugins": [
+    {
+      "name": "claudetailor",
+      "source": "./",
+      "description": "ClaudeTailor is an AI-driven context provisioning engine that dynamically builds minimal Claude Code project environments based on your development requirements. Stop context bloat — let AI cherry-pick only what it needs from your context pool.",
+      "version": "0.1.0",
+      "author": {
+        "name": "John-bardera",
+        "url": "https://github.com/John-bardera"
+      },
+      "homepage": "https://github.com/John-bardera/ClaudeTailor",
+      "repository": "https://github.com/John-bardera/ClaudeTailor",
+      "license": "MIT",
+      "keywords": [
+        "context",
+        "provisioning",
+        "context-management",
+        "workspace-setup",
+        "ai-driven",
+        "claude-code"
+      ],
+      "category": "workflow",
+      "tags": [
+        "context",
+        "automation",
+        "productivity",
+        "workspace"
+      ],
+      "strict": false
+    }
+  ]
+}

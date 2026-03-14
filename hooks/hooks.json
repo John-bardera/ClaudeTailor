@@ -1,0 +1,12 @@
+{
+  "PreToolUse": [
+    {
+      "pattern": ".*",
+      "description": "ClaudeTailor: New project detected - offer /tailor command",
+      "condition": " ClaudeTailor: Check if .claude/ is empty or minimal",
+      "inject": {
+        "systemPrompt": "ClaudeTailor Plugin is available. Use /tailor to automatically configure your project environment with optimal rules, MCPs, and skills."
+      }
+    }
+  ]
+}
