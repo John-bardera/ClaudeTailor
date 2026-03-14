@@ -25,7 +25,7 @@ Claude Codeを使いこなすにつれ、私たちは優秀な外部MCPやOSSの
 
 ClaudeTailorは「抽出エンジン（プラグイン）」と「あなたの素材庫（プール）」で構成されます。AIが正確に抽出できるよう、以下のような構造での管理を推奨しています。
 
-/```text
+```text
 ClaudeTailor/
 ├── README.md
 ├── plugin/                # ⚙️ 抽出エンジン本体（/tailor コマンド）
@@ -34,23 +34,23 @@ ClaudeTailor/
 │   ├── mcps/              #  ├─ MCPサーバー設定ファイル (例: sqlite_mcp.json)
 │   └── skills/            #  └─ 単一機能のスクリプト群
 └── submodules/            # 📦 【ユーザー定義】外部OSSのリンク (Git Submodules等)
-/```
+```
 
 ## 🚀 Getting Started
 
 ### 1. リポジトリのClone（素材庫の準備）
 まずは本リポジトリを、ご自身がアクセスしやすい作業ディレクトリにクローンします。エンジニアが日常的にルールやスキルを追加・編集できるよう、隠しフォルダにはせず、手元に置いておくことをお勧めします。
 
-/```bash
-git clone [https://github.com/yourusername/ClaudeTailor.git](https://github.com/yourusername/ClaudeTailor.git) ~/ClaudeTailor
-/```
+```bash
+git clone https://github.com/John-bardera/ClaudeTailor.git ~/ClaudeTailor
+```
 
 ### 2. プラグインの登録
 クローンしたディレクトリ内の `plugin` を、Claude Codeにプラグインとして追加します。これでどのプロジェクトからでもTailorを呼び出せるようになります。
 
-/```bash
+```bash
 claude add plugin ~/ClaudeTailor/plugin
-/```
+```
 
 ### 3. 素材プールの構築（あなたの色に染める）
 `~/ClaudeTailor/pool/` や `~/ClaudeTailor/submodules/` 配下に、普段お使いのRule、MCP、外部スキルを自由に配置してください。
@@ -58,10 +58,10 @@ claude add plugin ~/ClaudeTailor/plugin
 ### 4. プロジェクトの仕立て（環境構築）
 新規プロジェクトのディレクトリを作成し、Claude Codeを起動します。
 
-/```bash
+```bash
 mkdir my-new-project && cd my-new-project
 claude
-/```
+```
 
 魔法のコマンド `/tailor` を呼び出し、作りたいものの要件を伝えます。
 
