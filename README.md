@@ -5,6 +5,8 @@
 
 ClaudeTailorは、Claude Codeのプロジェクト環境（`./.claude`）を、その時の開発要件に合わせて**動的かつ最小構成で自動構築**するプラグインです。
 
+---
+
 ## 🚨 The Problem: コンテキストの肥大化と管理地獄
 
 Claude Codeを使いこなすにつれ、私たちは優秀な外部MCPやOSSのスキル群を大量に導入したくなります。しかし、それらをすべて読み込ませるとどうなるでしょうか？
@@ -13,6 +15,8 @@ Claude Codeを使いこなすにつれ、私たちは優秀な外部MCPやOSSの
 * **🧠 推論の低下（ハルシネーション）:** AIが「今はどのルール・ツールを使うべきか」で迷い、的外れなコードを生成し始めます。
 * **📁 管理コストの爆発:** 「Python用」「フロントエンド用」と静的なテンプレートを人間が手動で管理するのは、もはや限界です。
 
+---
+
 ## 💡 The Solution: Just-In-Time Context
 
 **ClaudeTailorは、このアプローチを根本から変えます。**
@@ -20,6 +24,8 @@ Claude Codeを使いこなすにつれ、私たちは優秀な外部MCPやOSSの
 
 * **Bring Your Own Context:** 特定の言語やツールに依存しません。あなた独自の秘伝のプロンプトや、お気に入りのOSSをそのまま活用できます。
 * **Zero Taxonomy:** 「このルールはどのフォルダに分類すべきか？」と悩む必要はありません。
+
+---
 
 ## 📂 Architecture & Directory Structure
 
@@ -36,6 +42,8 @@ ClaudeTailor/
 └── submodules/            # 📦 【ユーザー定義】外部OSSのリンク (Git Submodules等)
 ```
 
+---
+
 ## 🚀 Getting Started
 
 ### 1. リポジトリのClone（素材庫の準備）
@@ -45,6 +53,8 @@ ClaudeTailor/
 git clone https://github.com/John-bardera/ClaudeTailor.git ~/ClaudeTailor
 ```
 
+---
+
 ### 2. プラグインの登録
 クローンしたディレクトリ内の `plugin` を、Claude Codeにプラグインとして追加します。これでどのプロジェクトからでもTailorを呼び出せるようになります。
 
@@ -52,8 +62,12 @@ git clone https://github.com/John-bardera/ClaudeTailor.git ~/ClaudeTailor
 claude add plugin ~/ClaudeTailor/plugin
 ```
 
+---
+
 ### 3. 素材プールの構築（あなたの色に染める）
 `~/ClaudeTailor/pool/` や `~/ClaudeTailor/submodules/` 配下に、普段お使いのRule、MCP、外部スキルを自由に配置してください。
+
+---
 
 ### 4. プロジェクトの仕立て（環境構築）
 新規プロジェクトのディレクトリを作成し、Claude Codeを起動します。
@@ -71,5 +85,6 @@ claude
 ClaudeTailorがあなたのプールをスキャンし、現在のプロジェクト（`./.claude`）に「Pythonの型規約」「金融計算用ルール」「データ分析用MCP」など、**必要最小限の設定のみを自動抽出・配置**します。
 
 ---
+
 **👔 さあ、無駄のない最高のパフォーマンスを発揮するClaude Code環境を手に入れましょう！**
 
