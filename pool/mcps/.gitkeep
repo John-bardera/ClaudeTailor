@@ -1,0 +1,2 @@
+# This file ensures the directory is tracked by Git
+# Add your MCP server configuration files here (e.g., sqlite_mcp.json)

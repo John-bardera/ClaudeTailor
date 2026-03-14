@@ -17,3 +17,11 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+# User context pool (ignore contents, keep .gitkeep)
+pool/**/*
+!pool/**/.gitkeep
+
+# External submodules (ignore contents, keep .gitkeep)
+submodules/*
+!submodules/.gitkeep
